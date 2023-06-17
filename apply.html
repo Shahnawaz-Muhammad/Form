@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!----======== CSS ======== -->
+	<link rel="stylesheet" href="style.css">
+	<!----===== Iconscout CSS ===== -->
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<title>Responsive Regisration Form </title>
+</head>
+
+<body>
+	<div class="container main-container-size">
+		<div class="col-sm-12 col-xl-12">
+			<div class="card">
+				<div class=" pb-0 card-banner-img" class="h-100">
+					<img src="./application-form.jpg" alt="" class="w-100 object-fit-cover">
+				</div>
+				<div class="card-body">
+					<form class="mega-form" id="registration_form" method="post" action="" enctype="multipart/form-data"
+						novalidate autocomplete="off">
+
+						<!--  Payment Information -->
+						<div class="section-container">
+							<div class="alert alert-secondary dark section-header" role="alert" style>
+								<h6 class="section-title"><i class="fa fa-id-card-o fa-fa_icon"></i> Payment Information
+								</h6>
+							</div>
+
+							<div class="row row-container">
+								<div class="col-sm-12 col-md-6 col-lg-4 form-input-group">
+									<label for="plotSize" class="form-label">Size</label>
+									<select id="plotSize" class="form-select" name="plotSize">
+										<option selected>Select Size</option>
+										<option value="1">5 Marla</option>
+										<option value="2">7 Marla</option>
+										<option value="3">10 Marla</option>
+									</select>
+
+									<div class="error-message" id="plotSizeError"></div>
+								</div>
+
+								<div class="col-sm-12 col-md-6 col-lg-4 form-input-group">
+									<label for="paymentPlan" class="form-label">Payment
+										Plan</label>
+									<select id="paymentPlan" class="form-select" name="paymentPlan">
+										<option selected>Select Plan</option>
+										<option value="1">Lum sum</option>
+										<option value="2">1 Year </option>
+										<option value="3">2 Years</option>
+									</select>
+									<div class="error-message" id="paymentPlanError"></div>
+
+								</div>
+
+
+								<div class=" col-sm-12 col-md-6 col-lg-4 form-input-group d-flex align-items-center">
+									<button class="w-100 p-2  form-button text-white">View Payment Plan</button>
+								</div>
+							</div>
+
+							<div class="row row-container">
+								<div class="col-sm-12 col-md-6 col-lg-4 form-input-group ">
+									<label for="title" class="form-label">Title</label>
+									<select id="title" class="form-select" name="title">
+										<option selected>Select Title</option>
+										<option value="1">Mr</option>
+										<option value="2">Ms</option>
+										<option value="3">Miss</option>
+									</select>
+									<div class="error-message" id="titleError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-4 form-input-group">
+									<label for="firstName" class="form-label">First Name</label>
+									<input id="firstName" type="text" class="form-control" name="firstName" value=""
+										placeholder="First Name ">
+									<div class="error-message" id="firstNameError"></div>
+
+								</div>
+
+
+								<div class="col-sm-12 col-md-6 col-lg-4 form-input-group">
+									<label for="lastName" class="form-label">Last Name</label>
+									<input id="lastName" type="text" class="form-control" name="lastName" value=""
+										placeholder="Last Name ">
+									<div class="error-message" id="lastNameError"></div>
+								</div>
+							</div>
+
+							<div class="row row-container">
+								<div class="col-sm-12 col-md-6 col-lg-4 form-input-group">
+									<label for="nicType" class="form-label">National Identity
+										Type</label>
+									<select id="nicType" class="form-select" name="nicType">
+										<option selected>Computorized National Identity Card</option>
+										<option value="1">Pakistan Card</option>
+										<option value="2">Passport</option>
+									</select>
+									<div class="error-message" id="nicTypeError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-4 form-input-group">
+									<label for="nicNumber" class="form-label">NICOP
+										Number</label>
+									<input id="nicNumber" type="text" class="form-control" name="nicNumber" value=""
+										placeholder="">
+									<div class="error-message" id="nicNumberError"></div>
+
+								</div>
+
+
+								<div class="col-sm-12 col-md-6 col-lg-4 form-input-group">
+									<label for="confirmNicNumber" class="form-label">Confirm NICOP
+										Number</label>
+									<input id="confirmNicNumber" type="text" class="form-control"
+										name="confirmNicNumber" value="" placeholder="">
+									<div class="error-message" id="confirmNicNumberError"></div>
+
+								</div>
+							</div>
+
+							<div class="row row-container">
+								<div class="col-sm-12 col-md-6 col-lg-6 form-input-group">
+									<label for="nicIssueDate" class="form-label">NIOP ISSUENCE
+										Date</label>
+									<input id="nicIssueDate" type="date" class="form-control" name="nicIssueDate"
+										value="" placeholder="">
+									<div class="error-message" id="nicIssueDateError"></div>
+
+								</div>
+
+
+								<div class="col-sm-12 col-md-6 col-lg-6 form-input-group">
+									<label for="nicExpiryDate" class="form-label">NICOP EXPIRY
+										DATE</label>
+									<input id="nicExpiryDate" type="date" class="form-control" name="nicExpiryDate"
+										value="" placeholder="">
+									<div class="error-message" id="nicExpiryDateError"></div>
+
+								</div>
+							</div>
+
+
+							<div class="row row-container">
+								<div class="col-sm-12 col-md-6 col-lg-6 form-input-group">
+									<label for="email" class="form-label">Email</label>
+									<input id="email" type="email" class="form-control" name="email" value=""
+										placeholder="">
+									<div class="error-message" id="emailError"></div>
+
+								</div>
+
+
+								<div class="col-sm-12 col-md-6 col-lg-6 form-input-group">
+									<label for="confirmEmail" class="form-label">Confirm
+										Email</label>
+									<input id="confirmEmail" type="email" class="form-control" name="confirmEmail"
+										value="" placeholder="">
+									<div class="error-message" id="confirmEmailError"></div>
+
+								</div>
+							</div>
+						</div>
+
+						<!-- Contacts -->
+						<div class="section-container contacts">
+							<div class="alert alert-secondary dark section-header" role="alert" style>
+								<h6 class=" section-title"><i class="fa fa-address-book fa-fa_icon"
+										aria-hidden="true"></i> Contacts
+								</h6>
+							</div>
+							<div class="row row-container">
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="mobile" class="form-label">MOBILE</label>
+									<input id="mobile" type="text" class="form-control" name="mobile" value=""
+										placeholder="3445405464">
+									<div class="error-message" id="mobileError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="whatsApp" class="form-label">WHATSAPP NO</label>
+									<input id="whatsApp" type="text" class="form-control" name="whatsApp" value=""
+										placeholder="3154548454">
+									<div class="error-message" id="whatsAppError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="residencePhone" class="form-label">RESIDENCE PHONE NO</label>
+									<input id="residencePhone" type="text" class="form-control" name="residencePhone"
+										value="" placeholder="">
+									<div class="error-message" id="residencePhoneError"></div>
+
+								</div>
+
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="officePhone" class="form-label">OFFICE PHONE NO</label>
+									<input id="officePhone" type="text" class="form-control" name="officePhone" value=""
+										placeholder="">
+									<div class="error-message" id="officePhoneError"></div>
+								</div>
+							</div>
+
+							<div class="add-contact-info position-relative">
+
+							</div>
+
+							<div class="row">
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<button type="button" class="btn w-100" onclick="addRowContainer()"
+										style="background-color: #2ab82a; font: bold; color: #fff;">Add Contact
+										Info</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Permanent Address -->
+						<div class="section-container">
+							<div class="alert alert-secondary dark section-header" role="alert" style>
+								<h6 class=" section-title"> <i class="fa fa-address-card fa-fa_icon"
+										aria-hidden="true"></i> Permanent
+									Address</h6>
+							</div>
+							<div class="row row-container mb-3">
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="permanentAddressOne" class="form-label">Address Line
+										1</label>
+									<input id="permanentAddressOne" type="text" class="form-control"
+										name="permanentAddressOne" value="" placeholder="">
+									<div class="error-message" id="permanentAddressOneError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="permanentAddressTwo" class="form-label">Address Line
+										2</label>
+									<input id="permanentAddressTwo" type="text" class="form-control"
+										name="permanentAddressTwo" value="" placeholder="">
+									<div class="error-message" id="permanentAddressTwoError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="permanentAddressThree" class="form-label">Address Line
+										3</label>
+									<input id="permanentAddressThree" type="text" class="form-control"
+										name="permanentAddressThree" value="" placeholder="">
+									<div class="error-message" id="permanentAddressThreeError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="permanentCountry" class="form-label">COUNTRY</label>
+									<select id="permanentCountry" class="form-select" name="permanentCountry">
+										<option value="1">Select Country</option>
+										<option value="2">Pakistan Card</option>
+										<option value="3">Passport</option>
+									</select>
+									<div class="error-message" id="permanentCountryError"></div>
+
+								</div>
+							</div>
+							<div class="row row-container mb-3">
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="permanentState" class="form-label">STATE</label>
+									<select id="permanentState" class="form-select" name="permanentState">
+										<option value="1">CNIC</option>
+										<option value="2">Pakistan Card</option>
+										<option value="3">Passport</option>
+									</select>
+									<div class="error-message" id="permanentStateError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="permanentCity" class="form-label">CITY</label>
+									<select id="permanentCity" class="form-select" name="permanentCity">
+										<option value="1">CNIC</option>
+										<option value="2">Pakistan Card</option>
+										<option value="3">Passport</option>
+									</select>
+									<div class="error-message" id="permanentCityError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="permanentZip" class="form-label">POSTAL/ZIP
+										CODE</label>
+									<input id="permanentZip" type="text" class="form-control" name="permanentZip"
+										value="" placeholder="">
+									<div class="error-message" id="permanentZipError"></div>
+
+								</div>
+							</div>
+						</div>
+
+						<!-- Mailing Address -->
+						<div class="section-container">
+							<div class="alert alert-secondary dark section-header" role="alert" style>
+								<h6 class=" section-title">
+									<i class="fa fa-address-card fa-fa_icon" aria-hidden="true"></i>
+									Mailing Address
+								</h6>
+							</div>
+							<div class="row row-container mb-3">
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="mailingAddressOne" class="form-label">Address Line
+										1</label>
+									<input id="mailingAddressOne" type="text" class="form-control"
+										name="mailingAddressOne" value="" placeholder="">
+									<div class="error-message" id="mailingAddressOneError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="mailingAddressTwo" class="form-label">Address Line
+										2</label>
+									<input id="mailingAddressTwo" type="text" class="form-control"
+										name="mailingAddressTwo" value="" placeholder="">
+									<div class="error-message" id="mailingAddressTwoError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="mailingAddressThree" class="form-label">Address Line
+										3</label>
+									<input id="mailingAddressThree" type="text" class="form-control"
+										name="mailingAddressThree" value="" placeholder="">
+									<div class="error-message" id="mailingAddressThreeError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="mailingCountry" class="form-label">COUNTRY</label>
+									<select id="mailingCountry" class="form-select" name="mailingCountry">
+										<option value="1">CNIC</option>
+										<option value="2">Pakistan Card</option>
+										<option value="3">Passport</option>
+									</select>
+									<div class="error-message" id="mailingCountryError"></div>
+
+								</div>
+							</div>
+							<div class="row row-container mb-3">
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="mailingState" class="form-label">State</label>
+									<select id="mailingState" class="form-select" name="mailingState">
+										<option value="1">CNIC</option>
+										<option value="2">Pakistan Card</option>
+										<option value="3">Passport</option>
+									</select>
+									<div class="error-message" id="mailingStateError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="mailingCity" class="form-label">CITY</label>
+									<select id="mailingCity" class="form-select" name="mailingCity">
+										<option value="1">CNIC</option>
+										<option value="2">Pakistan Card</option>
+										<option value="3">Passport</option>
+									</select>
+									<div class="error-message" id="mailingCityError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="mailingZip" class="form-label">POSTAL/ZIP
+										CODE</label>
+									<input id="mailingZip" type="text" class="form-control" name="mailingZip" value=""
+										placeholder="">
+									<div class="error-message" id="mailingZipError"></div>
+
+								</div>
+							</div>
+						</div>
+
+						<!-- Attachments -->
+						<div class="section-container">
+							<div class="alert alert-secondary dark section-header" role="alert" style>
+								<h6 class=" section-title"><i class="fa fa-file-image-o fa-fa_icon"></i>
+									Attachments</h6>
+							</div>
+							<div class="row row-container mb-3">
+								<div class="col-sm-12 col-md-6 col-xl-4 form-input-group"> <label for="profilePicture"
+										class="form-label">Profile
+										Picture</label>
+									<input class="form-control" type="file" id="profilePicture" name="profilePicture">
+									<!-- Remove Button -->
+									<button type="button" onclick="removeImage()" class="btn btn-danger"
+										id="remove_button" style="display: none;">Remove</button>
+									<div class="error-message" id="profilePictureError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-xl-4 form-input-group">
+									<label for="identityFront" class="form-label">IDENTITY FRONT SIDE</label>
+									<input class="form-control" type="file" id="identityFront" name="identityFront">
+									<!-- Remove Button -->
+									<button type="button" onclick="removeImage()" class="btn btn-danger"
+										id="remove_button" style="display: none;">Remove</button>
+									<div class="error-message" id="identityFrontError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-xl-4 form-input-group"> <label for="identityBack"
+										class="form-label">IDENTITY
+										BACK SIDE</label>
+									<input class="form-control" type="file" id="identityBack" name="identityBack">
+									<!-- Remove Button -->
+									<button type="button" onclick="removeImage()" class="btn btn-danger"
+										id="remove_button" style="display: none;">Remove</button>
+									<div class="error-message" id="identityBackError"></div>
+
+								</div>
+							</div>
+						</div>
+
+
+						<!--BENEFICIARY Section  -->
+						<div class="section-container">
+							<div class="alert alert-secondary dark section-header" role="alert" style>
+								<h6 class=" section-title"><i class="fa fa-address-book fa-fa_icon"
+										aria-hidden="true"></i>
+									BENEFICIARY (Next of Kin)</h6>
+							</div>
+							<div class="row row-container">
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group"> <label for="nokRelation">NOK
+										RELATION *</label>
+									<select id="nokRelation" class="form-select" name="nokRelation">
+										<option selected>SELECT COUNTRY</option>
+										<option value="1">PAKISTAN</option>
+										<option value="2">INDIA</option>
+										<option value="3">SRILANKA</option>
+									</select>
+									<div class="error-message" id="nokRelationError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="nokName" class="form-label">NOK Name</label>
+									<input id="nokName" type="email" class="form-control" value="" name="nokName"
+										placeholder="">
+									<div class="error-message" id="nokNameError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group"> <label
+										for="nokIdentityType">NOK
+										IDENTITY TYPE *</label>
+									<select id="nokIdentityType" class="form-select" name="nokIdentityType">
+										<option selected>SELECT COUNTRY</option>
+										<option value="1">PAKISTAN</option>
+										<option value="2">INDIA</option>
+										<option value="3">SRILANKA</option>
+									</select>
+									<div class="error-message" id="nokIdentityTypeError"></div>
+
+								</div>
+
+								<div class="col-sm-12 col-md-6 col-lg-3 form-input-group">
+									<label for="nokNic" class="form-label">NOK CNIC</label>
+									<input id="nokNic" name="nokNic" type="email" class="form-control" value=""
+										placeholder="">
+									<div class="error-message" id="nokNicError"></div>
+
+								</div>
+							</div>
+						</div>
+
+						<!-- Terms and Conditions -->
+
+						<div class="section-container">
+							<div class="alert alert-secondary dark section-header" role="alert" style>
+								<h6 class=" section-title"><i class="fa fa-address-book fa-fa_icon"
+										aria-hidden="true"></i>
+									Terms & Conditions</h6>
+							</div>
+							<div class="row row-container">
+								<div class="col-sm-12 col-md-6 col-lg-4 form-input-group"> <label for="howYouHear">HOW
+										DID YOU HEAR ABOUT THIS
+										LOUNCH</label>
+									<select id="howYouHear" name="howYouHear" class="form-select">
+										<option selected>SELECT COUNTRY</option>
+										<option value="1">PAKISTAN</option>
+										<option value="2">INDIA</option>
+										<option value="4">SRILANKA</option>
+									</select>
+									<div class="error-message" id="howYouHearError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-4 form-input-group">
+									<label for="other" class="form-label">OTHER</label>
+									<input id="other" name="other" type="email" class="form-control" value=""
+										placeholder="">
+									<div class="error-message" id="otherError"></div>
+
+								</div>
+								<div class="col-sm-12 col-md-6 col-lg-4 form-input-group"> <label
+										for="taxPayerStatus">FBR ACTIVE TAXPAYERS
+										STATUS</label>
+									<select id="taxPayerStatus" name="taxPayerStatus" class="form-select">
+										<option selected>SELECT COUNTRY</option>
+										<option value="1">PAKISTAN</option>
+										<option value="2">INDIA</option>
+										<option value="3">SRILANKA</option>
+									</select>
+									<div class="error-message" id="taxPayerStatusError"></div>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row row-container mt-3 d-flex justify-content-end">
+							<div class="col-sm-6 col-md-6 col-xl-4 mb-3">
+								<button class="w-100 p-2 form-button text-white">Terms & Conditions</button>
+							</div>
+							<div class="col-sm-6 col-md-6 col-xl-4">
+								<button id="submitBtn" type="submit" class="w-100 p-2 form-button text-white">Submit
+									Form</button>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="./script.js"></script>
+	<script src="./addContact.js"></script>
+</body>
+
+</html>

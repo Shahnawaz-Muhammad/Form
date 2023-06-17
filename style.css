@@ -1,0 +1,113 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.container{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.main-container-size, .card-body{
+    background-color: lightblue;
+}
+
+
+
+
+/* Shahnawaz changes */
+
+ 
+ .form-label {
+     margin-bottom: 0;
+     padding: 0 5px;
+ }
+
+ .form-button {
+    background-color: #4070f4;
+    border: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+.section-container {
+    padding: 10px 0;
+}
+
+.section-header{
+    background-color: #1565C0;
+}
+
+.section-title{
+    margin-bottom: 0;
+    color:#fefefe
+}
+
+.form-input-group{
+    height: 85px;
+}
+
+
+.error-message{
+    color: red;
+    font-size: .9rem;
+}
+ /* Shahnawaz changes */
+
+
+@media (max-width: 750px) {
+    .container form{
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+       display: none;
+    }
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-field{
+        width: 100%;
+    }
+} 
+
+/* @media (min-width: 676px) {
+    .row-container{
+        height: 80px;
+     }
+}
+
+@media (max-width: 550px) {
+    .row-container{
+        height: 80px;
+     }
+} */
+
+.delete-icon {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    color: red;
+    cursor: pointer;
+    margin-top: 10px;
+  }
